@@ -1,0 +1,177 @@
+* { padding: 0px; margin: 0px;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(fonts/Roboto/Roboto-Regular.ttf) format('truetype'),
+    url('fonts/Roboto/Roboto-Bold.ttf') format('truetype')
+    ;
+}
+
+body {
+    /* background: url('background.png') no-repeat center center / cover; */
+    box-shadow: 0px 0px 3px;
+    margin: 0px 200px;
+    display: grid;
+    grid-template-columns: 1;
+    column-width: 750px;
+    border: 1px solid rgba(0, 0, 0, 0.809);
+    font-family: 'Roboto', sans-serif;
+}
+nav {
+    padding: 0px;
+    /* position: sticky; */
+
+    h1 {
+        background-color: orange;
+        color: black;
+        padding: 10px 0px;
+        text-indent: 10px;
+    }
+    h2 {
+        background-color:rgba(0, 0, 0, 0.809);/*black;*/
+        color: white;
+        padding: 10px 0px;
+        text-indent: 10px;
+    }
+ }
+ .item {
+    padding: 20px;
+    /* max-width: 750px; */
+
+    #top-banner {
+        background-color: orange;
+        padding: 8px;
+    }
+    #bottom-banner {
+        background-color: rgba(0, 0, 0, 0.809);/* black;*/
+        padding: 8px;
+        color: white;
+    }
+    .content {
+        border: 1px solid;
+        padding: 10px;
+        background-color: lightcyan;
+
+        p {
+            margin: 10px 0px 20px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        #lesson {
+            /* margin-bottom: 50px; */
+            line-height: 1.5;
+            line-break: normal;
+        }
+
+        h4 {
+            background-color: rgba(0, 0, 0, 0.809)/* black*/;
+            color: white;
+            padding: 5px 0px;
+            text-indent: 10px;
+        }
+        #example, #exercise-area {
+            border: 1px solid rgba(0, 0, 0, 0.809);
+            padding: 10px 10px 15px 10px;
+            margin: 0px 0px 5px;
+            text-wrap:wrap ;
+        }
+        #example {
+            background-color: #1E1E1E;
+        }
+        code {
+            white-space: pre;
+            text-wrap:wrap ;
+            color: aliceblue;
+        }
+        #en-pied {
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            gap: 2px;
+            margin-bottom: 5px;
+            .btn-nav {
+                width: 60px;
+                height: 25px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border: none;
+                background-color: orange;
+                &.btn-nav:hover {
+                    border: 1px solid;
+                }
+                &.btn-nav:active {
+                    color: orangered;
+                    /* border: 1px solid; */
+                }
+            }
+        }
+        .hidden-exercise {
+            visibility: hidden;
+            display: none;
+            border: 1px solid rgba(0, 0, 0, 0.809);
+            padding: 10px 10px 15px 10px;
+            margin: 0px 0px 5px;
+        }
+    }
+}
+
+.nav-page, .prev-lesson, .next-lesson {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    div button {
+        width: 140px;
+        height: 30px;
+        border: 1px solid;
+    }
+    div button:hover {
+        background-color: orange;
+    }
+    div button:active {
+        color: white;
+    }
+    #prev-chapter, #next-chapter {
+        /* background-color: aquamarine; */
+        width: 200px;
+        font-weight: bold;
+        color: orange;
+    }
+    #next-chapter {
+        text-align: right;
+    }
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.809);/* black;*/
+    color: white;
+    padding: 10px 0px;
+    text-indent: 10px;
+    position: relative;
+    bottom: 0px;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0px 0px;
+    }
+    .item {
+        padding: 5px;
+    }
+    footer {
+        text-align: center;
+    }
+    
+}
+
+.highlight {
+    color: #eec10bc6; /* Couleur dorée pour les balises */
+}
+.string {
+    color: #ffffff; /* Couleur verte pour les chaînes de caractères */
+}
+.comment {
+    color: #808080; /* Couleur grise pour les commentaires */
+}
