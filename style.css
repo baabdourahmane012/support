@@ -78,10 +78,15 @@ nav {
         #example {
             background-color: #1E1E1E;
         }
-        code {
+        #codeBlock {
             white-space: pre;
             text-wrap:wrap ;
             color: aliceblue;
+        }
+        #exo {
+            white-space: pre;
+            text-wrap:wrap;
+            color: #1E1E1E;
         }
         #en-pied {
             display: flex;
@@ -183,4 +188,20 @@ footer {
 }
 .comment {
     color: #808080; /* Couleur grise pour les commentaires */
+}
+.manquant {
+    background-color: cyan;
+    border: none;
+    border-bottom: 1px solid #ff00883a;
+    border-radius: 5px;
+}
+.manquant:focus {
+    outline: none;
+    text-indent: 4px;
+}
+#lang, #charset, #scale {
+    width: 35px;
+}
+#device-width {
+    width: 85px;
 }
