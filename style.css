@@ -160,6 +160,15 @@ footer {
     .item {
         padding: 5px;
     }
+
+    #precedente:active, #suivante:active {
+        color: #ffffff;
+        background-color: orange;
+    }
+    #precedente, #suivante {
+        background-color: #ffffff;
+    }
+
     footer {
         text-align: center;
     }
